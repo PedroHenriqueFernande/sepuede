@@ -1,0 +1,24 @@
+.testimonials{padding:72px 20px;background:#fff9f2;color:#30223d}
+.testimonials__inner{max-width:1080px;margin:auto}
+.testimonials__header{text-align:center;max-width:720px;margin:0 auto 32px}
+.testimonials__eyebrow{display:inline-block;padding:7px 16px;border-radius:999px;background:#f2e8fb;color:#754197;font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+.testimonials h2{font-family:Fredoka,sans-serif;font-size:clamp(30px,4vw,42px);font-weight:600;line-height:1.15;margin:18px 0 14px}
+.testimonials h2 span{color:#bc4b27}
+.testimonials__intro{font-size:17px;line-height:1.65;color:#65596c}
+.testimonials__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.testimonial{margin:0;padding:28px;background:#fff;border:1px solid #ebdfef;border-radius:24px;box-shadow:0 8px 24px #43205208;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.testimonial:before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#ec8246,#a278cb)}
+.testimonial__rating{display:flex;align-items:center;gap:10px;margin:0 0 18px}
+.testimonial__stars{display:flex;gap:3px}
+.testimonial__star{display:inline-block;color:#b8750b;font-family:Arial,sans-serif;font-size:24px;line-height:1}
+.testimonial__star--half{position:relative;color:#e5dfd6}
+.testimonial__star--half:before{content:"★";position:absolute;inset:0 auto 0 0;width:50%;overflow:hidden;color:#b8750b}
+.testimonial__score{font-size:13px;font-weight:800;color:#6c5c76}
+.testimonial blockquote{margin:0 0 24px;font-size:16px;line-height:1.8;flex:1}
+.testimonial figcaption{display:flex;align-items:center;gap:14px;padding-top:20px;border-top:1px solid #f0e9f2}
+.testimonial img{width:68px;height:68px;flex-shrink:0;object-fit:cover;border-radius:50%;border:3px solid #f2e8fb}
+.testimonial strong{display:block;font-size:16px;font-weight:900}
+.testimonial__role{display:block;font-size:13px;color:#6c5c76;margin-top:2px}
+.testimonial__label{display:block;font-size:11px;color:#785e88;margin-top:4px}
+.testimonials__notice{max-width:760px;margin:24px auto 0;text-align:center;font-size:13px;line-height:1.6;color:#6c5c76}
+@media(max-width:639px){.testimonials{padding:52px 16px}.testimonials__grid{grid-template-columns:1fr;gap:18px}.testimonial{padding:24px}.testimonials__intro{font-size:16px}}
