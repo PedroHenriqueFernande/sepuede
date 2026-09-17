@@ -56,3 +56,11 @@
 /* Oferta: preço principal em verde */
 .price-green{color:var(--success)}
 .price-green .text-gradient-brand{background:linear-gradient(160deg,#3fd07a 0%,#2aa654 55%,#1b8a43 100%);-webkit-background-clip:text;background-clip:text}
+/* Faixa do topo fixa com contador (prefixo tb-) */
+.tb-bar{position:sticky;top:0;z-index:50;box-shadow:0 8px 20px -12px #2c1d4399}
+.tb-inner{position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.375rem 1rem}
+.tb-timer{display:inline-flex;align-items:center;gap:.375rem;padding:.1875rem .75rem .1875rem .5rem;border-radius:9999px;box-shadow:inset 0 0 0 1px #fefcf459}
+.tb-icon{width:.9375rem;height:.9375rem;flex-shrink:0}
+.tb-label{font-size:.6875rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.9}
+.tb-clock{min-width:4.6em;font-family:Fredoka,system-ui,sans-serif;font-size:1rem;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:.02em;text-align:left}
+@media(max-width:39.99rem){.tb-bar{padding-top:.4375rem;padding-bottom:.4375rem;font-size:.78125rem;line-height:1.25}.tb-inner{gap:.3125rem .625rem}.tb-inner>.inline-flex>svg{display:none}}
