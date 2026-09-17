@@ -23,3 +23,36 @@
 }
 @media(hover:hover){.dn-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-pop)}.dn-card:hover .dn-coin{transform:rotate(-8deg) scale(1.06)}}
 @media(prefers-reduced-motion:reduce){.dn-card,.dn-coin{transition:none}.dn-card:hover,.dn-card:hover .dn-coin{transform:none}}
+/* Bônus: preço riscado + grátis (prefixo bn-) */
+.bn-price{position:relative;margin-top:auto;padding-top:1.5rem;display:flex;flex-wrap:wrap;align-items:baseline;gap:.25rem .75rem}
+.bn-price:before{content:"";position:absolute;left:0;right:0;top:.75rem;border-top:1px dashed #e3dfed}
+.bn-old{font-family:Fredoka,system-ui,sans-serif;font-size:1.0625rem;font-weight:600;color:var(--muted-foreground);text-decoration:line-through;text-decoration-color:var(--destructive);text-decoration-thickness:2px}
+.bn-new{font-family:Fredoka,system-ui,sans-serif;font-size:1.625rem;font-weight:700;line-height:1;color:var(--success)}
+/* Bônus: valor total (prefixo bn-total) */
+.bn-total{margin:2.5rem auto 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.25rem .875rem;width:fit-content;max-width:100%;padding:.875rem 1.75rem;border:2px dashed #fac13173;border-radius:1.25rem;background:#ffffff0d;color:var(--primary-foreground);font-family:Fredoka,system-ui,sans-serif;line-height:1.2;text-align:center}
+.bn-total-label{font-size:1.0625rem;font-weight:600;color:#fefcf4e6}
+.bn-total-old{font-size:1.125rem;font-weight:600;color:#fefcf499;text-decoration:line-through;text-decoration-color:#ff4d7d;text-decoration-thickness:2px}
+.bn-total-new{font-size:1.625rem;font-weight:700;color:var(--sun)}
+/* Oferta: pilha de valor (prefixo vs-) */
+.vs-list{margin:1.5rem auto 0;max-width:30rem;padding:0;list-style:none;text-align:left}
+.vs-row{display:grid;grid-template-columns:1.125rem minmax(0,1fr) auto;align-items:center;gap:.75rem;padding:.625rem .25rem;border-bottom:1px dashed var(--border)}
+.vs-row--main{margin-bottom:.375rem;padding:.875rem;border:2px solid #f8682f40;border-bottom-style:solid;border-radius:1rem;background:#f8682f0d}
+.vs-icon{width:1.125rem;height:1.125rem}
+.vs-icon--check{color:var(--success)}
+.vs-icon--gift{color:var(--grape)}
+.vs-name{font-size:.875rem;font-weight:600;line-height:1.3;color:var(--foreground)}
+.vs-row--main .vs-name{font-family:Fredoka,system-ui,sans-serif;font-size:1.0625rem;font-weight:700}
+.vs-sub{display:block;margin-top:.125rem;font-size:.75rem;font-weight:500;line-height:1.35;color:var(--muted-foreground)}
+.vs-prices{display:flex;flex-direction:column;align-items:flex-end;gap:.125rem;font-family:Fredoka,system-ui,sans-serif;line-height:1.1;white-space:nowrap}
+.vs-old{font-size:.8125rem;font-weight:600;color:var(--muted-foreground);text-decoration:line-through;text-decoration-color:var(--destructive);text-decoration-thickness:1.5px}
+.vs-new{font-size:1rem;font-weight:700;color:var(--foreground)}
+.vs-row--main .vs-new{font-size:1.25rem;color:var(--success)}
+.vs-free{color:var(--success)}
+.vs-total{margin:.875rem auto 0;max-width:30rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.875rem 1rem;border-radius:1rem;background:var(--secondary);text-align:left}
+.vs-total-label{font-family:Fredoka,system-ui,sans-serif;font-size:1rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--secondary-foreground)}
+.vs-total .vs-old{font-size:1rem}
+.vs-total .vs-new{font-size:1.5rem;color:var(--success)}
+@media(min-width:40rem){.vs-prices{flex-direction:row;align-items:baseline;gap:.5rem}}
+/* Oferta: preço principal em verde */
+.price-green{color:var(--success)}
+.price-green .text-gradient-brand{background:linear-gradient(160deg,#3fd07a 0%,#2aa654 55%,#1b8a43 100%);-webkit-background-clip:text;background-clip:text}
